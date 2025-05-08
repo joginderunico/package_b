@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:package_c/main.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,7 +11,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
@@ -29,7 +31,9 @@ class PackageB extends StatefulWidget {
 }
 
 class _PackageBState extends State<PackageB> {
-  void _incrementCounter() {}
+  void goTo() {
+    Get.to(() => PackageC(title: 'Yo Package C'));
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -46,7 +50,7 @@ class _PackageBState extends State<PackageB> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
+        onPressed: goTo,
         tooltip: 'Go',
         child: const Icon(Icons.add),
       ),

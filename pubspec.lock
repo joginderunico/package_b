@@ -75,6 +75,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  get:
+    dependency: "direct main"
+    description:
+      name: get
+      sha256: c79eeb4339f1f3deffd9ec912f8a923834bec55f7b49c9e882b8fef2c139d425
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.7.2"
   leak_tracker:
     dependency: transitive
     description:
@@ -131,6 +139,24 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.16.0"
+  package_a:
+    dependency: transitive
+    description:
+      path: "."
+      ref: main
+      resolved-ref: "722623e02ceb2f48690cae302b8042b9808a5152"
+      url: "https://github.com/joginderunico/package_a"
+    source: git
+    version: "1.0.0+1"
+  package_c:
+    dependency: "direct main"
+    description:
+      path: "."
+      ref: main
+      resolved-ref: "93853f01abb96b7d5dbadcfed3fd296a81e8a272"
+      url: "https://github.com/joginderunico/package_c"
+    source: git
+    version: "1.0.0+1"
   path:
     dependency: transitive
     description:
@@ -208,6 +234,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "14.3.1"
+  web:
+    dependency: transitive
+    description:
+      name: web
+      sha256: "868d88a33d8a87b18ffc05f9f030ba328ffefba92d6c127917a2ba740f9cfe4a"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.1.1"
 sdks:
   dart: ">=3.7.2 <4.0.0"
   flutter: ">=3.18.0-18.0.pre.54"
